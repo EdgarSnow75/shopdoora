@@ -45,7 +45,7 @@ export interface ProductDataType {
 export const ProductData = [
   {
     id: "P01",
-    productName: "Mori Calliope",
+    productName: "Calliope",
     productImg: Raspberry,
     desc: "Flavor of Death",
     price: 45000,
@@ -54,7 +54,7 @@ export const ProductData = [
   },
   {
     id: "P02",
-    productName: "Horshimachi Suisei",
+    productName: "Suisei",
     productImg: Sea,
     desc: "Your Shooting Star",
     price: 45000,
@@ -63,7 +63,7 @@ export const ProductData = [
   },
   {
     id: "P03",
-    productName: "Nerissa Ravencroft",
+    productName: "Nerissa",
     productImg: Honey,
     desc: "Unhinged",
     price: 35000,
@@ -90,7 +90,7 @@ export const ProductData = [
   },
   {
     id: "P06",
-    productName: "Takanashi Kiara",
+    productName: "Kiara",
     productImg: Apple,
     desc: "KFP",
     price: 42000,

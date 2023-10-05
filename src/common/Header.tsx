@@ -27,12 +27,11 @@ export default function Header() {
 
   return (
     <div
-      className={`navbar transition-all duration-300 px-20 z-30 ${
+      className={`navbar transition-all duration-300 px-3 md:px-20 z-30 ${
         isScrolled ? "bg-black fixed" : "bg-red absolute top-0 left-0"
       } `}
     >
       <div className="navbar-start">
-        {" "}
         <a
           className="btn btn-ghost normal-case md:text-sm lg:text-xl 
              text-white"

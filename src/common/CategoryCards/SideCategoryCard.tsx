@@ -41,15 +41,17 @@ export default function SideCategoryCard({
   }, [scrollPosition, numImages]);
   return (
     <div
-      className={`flex flex-col md:flex-row justify-around rounded-md text-white bg-[#212529] ${className} py-5 h-[60vh]`}
+      className={`flex flex-col md:flex-row md:place-content-start justify-evenly rounded-md text-white bg-[#212529] ${className} py-5 h-[60vh]`}
     >
-      <div className="flex items-center">
-        <div className="flex flex-col items-start z-10 ml-48 mr-3">
-          <h2 className="text-xl lg:text-3xl font-bold mb-4">{desc}</h2>
-          <h3 className="font-light text-xl mb-4 w-[50%]">{categoryName}</h3>
+      <div className="flex items-center mr-2">
+        <div className="flex flex-col items-start z-10 ml-32 lg:ml-48">
+          <h2 className="text-lg lg:text-3xl font-bold mb-4">{desc}</h2>
+          <h3 className="font-light text-lg lg:text-xl mb-4 w-[50%]">
+            {categoryName}
+          </h3>
         </div>
       </div>
-      <div className="carousel">
+      <div className="carousel md:w-[80%] lg:w-full">
         <ul
           id="carousel"
           style={{ transform: `translateX(-${scrollPosition}%)` }}
@@ -57,22 +59,24 @@ export default function SideCategoryCard({
         >
           {ProductData.map((item) => (
             <li key={item.id} className="carousel-item">
-              <div className="card shadow-lg ring-[0.5px] ring-[rgba(0,0,0,0.2)] w-[12rem]  md:w-[10rem] md:h-[15rem] lg:h-[30rem] lg:w-[12rem] xl:w-[15rem] rounded-md">
+              <div className="card shadow-lg ring-[0.5px] ring-[rgba(0,0,0,0.2)] w-[12rem] h-[12rem]  md:w-[10rem] md:h-[18rem] lg:h-[30rem] lg:w-[12rem] xl:w-[15rem] rounded-md">
                 <figure>
                   <Image
                     src={item.productImg}
                     alt="Vape Product Showcase"
-                    className=" border-b-2 w-36 h-44 md:w-40 md:h-40 lg:w-[240px] lg:h-[325px]"
+                    className=" border-b-2 w-32 h-32 md:w-40 md:h-40 lg:w-[240px] lg:h-[325px]"
                     width={225}
                     height={200}
                   />
                 </figure>
-                <div className="card-body p-1 lg:p-9 bg-[#EAEAEA] text-center max-h-[50%] md:max-h-[40%] pt-2 lg:pt-9 text-black">
-                  <h2 className="text-center font-semibold">
+                <div className="card-body p-1 lg:p-9 bg-[#EAEAEA] text-center max-h-[50%] md:max-h-[40%] md:pt-1 lg:pt-9 text-black">
+                  <h2 className="text-center font-semibold text-sm md:text-base lg:text-xl">
                     {item.productName}
                   </h2>
-                  <p className="font-semibold">{item.price} MMK</p>
-                  <p className="text-yellow-500 flex align-middle justify-center">
+                  <p className="font-semibold text-xs md:text-sm lg:text-xl">
+                    {item.price} MMK
+                  </p>
+                  <p className="text-yellow-500 flex align-middle justify-center text-xs md:text-xs lg:text-xl">
                     <span className="mt-1 mr-1">
                       <AiTwotoneStar />
                     </span>
