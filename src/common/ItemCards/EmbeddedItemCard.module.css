@@ -1,0 +1,11 @@
+.cardBg {
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.cardImage {
+  position: relative;
+  z-index: 1;
+}

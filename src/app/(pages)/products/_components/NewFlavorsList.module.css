@@ -1,0 +1,24 @@
+.first {
+  background-image: url("../../../../../public/Products/try1.webp");
+  background-size: cover;
+  background-color: #353535;
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-radius: 0.37rem;
+}
+.second {
+  background-image: url("../../../../../public/Products/try2.webp");
+  background-size: cover;
+  background-color: #353535;
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-radius: 0.37rem;
+}
+.third {
+  background-image: url("../../../../../public/Products/try3.webp");
+  background-size: cover;
+  background-color: #353535;
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-radius: 0.37rem;
+}

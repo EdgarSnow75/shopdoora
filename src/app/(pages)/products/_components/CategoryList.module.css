@@ -1,0 +1,24 @@
+.device {
+  background-image: url("../../../../../public/Products/devices.png");
+  background-size: cover;
+  background-color: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.37rem;
+}
+.pod {
+  background-image: url("../../../../../public/Products/pod.png");
+  background-size: cover;
+  background-color: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.37rem;
+}
+.dispo {
+  background-image: url("../../../../../public/Products/disposable.webp");
+  background-size: cover;
+  background-color: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.37rem;
+}

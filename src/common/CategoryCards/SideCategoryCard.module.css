@@ -1,0 +1,29 @@
+.carouselContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carouselBar {
+  display: flex;
+  /* Make sure the width of the .carousel is larger than the container to enable scrolling */
+  width: 120%;
+  transition: transform 0.5s;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.scrollButton {
+  position: relative;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+}
